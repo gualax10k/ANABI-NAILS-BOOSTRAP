@@ -15,17 +15,17 @@ body{
     color: white;
 }
     .listadoInicio{
-            a {
-                color: $colorGeneral;
-                display: flex;
-                justify-content:space-around;
-                padding-top: 50px;
-                font-size: 50px;
-                background-color: white;
-                margin-top: 50px;
-                padding-top:0px;
-            }
-        }
+                h2 {
+                    color: $colorGeneral;
+                    display: flex;
+                    justify-content:space-around;
+                    padding-top: 50px;
+                    font-size: 50px;
+                    background-color: white;
+                    margin-top: 50px;
+                    padding-top:0px;
+                }
+    }
     .semi {
         padding-top: 13%;
     }

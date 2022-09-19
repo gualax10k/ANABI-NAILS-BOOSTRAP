@@ -14,7 +14,7 @@ body {
   color: white;
 }
 
-.listadoInicio a {
+.listadoInicio h2 {
   color: rgb(228, 117, 182);
   display: flex;
   justify-content: space-around;
