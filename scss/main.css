@@ -14,15 +14,19 @@ body {
   color: white;
 }
 
-.listadoInicio h2 {
-  color: rgb(228, 117, 182);
+.listadoInicio {
   display: flex;
-  justify-content: space-around;
-  padding-top: 50px;
+  justify-content: center;
+  justify-items: center;
+  color: rgb(228, 117, 182);
   font-size: 50px;
   background-color: white;
-  margin-top: 50px;
-  padding-top: 0px;
+  margin-top: 40px;
+}
+
+.tituloCard {
+  font-size: 30px;
+  color: rgb(173, 45, 199);
 }
 
 .semi {
@@ -111,10 +115,10 @@ body {
 
 @media (max-width: 768px) {
   .listadoInicio {
-    display: grid;
-  }
-  .listadoInicio a {
-    font-size: 23px;
+    color: rgb(228, 117, 182);
+    font-size: 40px;
+    background-color: white;
+    margin-top: 40px;
   }
   .marcas p {
     font-size: 20px;
@@ -147,6 +151,7 @@ body {
   #pieDePagina {
     display: flex;
     flex-direction: column-reverse;
+    width: 100%;
   }
   #pieDePagina .logo {
     display: flex;

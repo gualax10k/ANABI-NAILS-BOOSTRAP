@@ -1,5 +1,6 @@
 $colorFondo: linear-gradient(rgb(228, 117, 182),rgb(173, 45, 199),rgb(228, 117, 182),rgb(228, 117, 182));
 $colorGeneral: rgb(228, 117, 182);
+$colorGeneralDos: rgb(173, 45, 199);
 
 *{
     margin: 0;
@@ -14,17 +15,19 @@ body{
     font-family: 'Poppins', sans-serif;
     color: white;
 }
+    
     .listadoInicio{
-                h2 {
-                    color: $colorGeneral;
-                    display: flex;
-                    justify-content:space-around;
-                    padding-top: 50px;
-                    font-size: 50px;
-                    background-color: white;
-                    margin-top: 50px;
-                    padding-top:0px;
-                }
+                display:flex ;
+                justify-content: center;
+                justify-items: center;
+                color: $colorGeneral;
+                font-size: 50px;
+                background-color: white;
+                margin-top: 40px;
+    }
+    .tituloCard{
+        font-size: 30px;
+        color: $colorGeneralDos;
     }
     .semi {
         padding-top: 13%;
@@ -111,10 +114,10 @@ body{
 }
 @media (max-width: 768px) {
     .listadoInicio {
-        display: grid;
-        a {
-            font-size: 23px;
-        }
+        color: $colorGeneral;
+        font-size: 40px;
+        background-color: white;
+        margin-top: 40px;
     }
     .marcas {
         p {
@@ -149,6 +152,7 @@ body{
     #pieDePagina {
         display: flex;
         flex-direction: column-reverse;
+        width: 100%;
         .logo {
             display: flex;
             flex-direction: row;
