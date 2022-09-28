@@ -15,7 +15,13 @@ body{
     font-family: 'Poppins', sans-serif;
     color: white;
 }
-    
+    .serviciosCards {
+        display: grid;
+        
+    }
+    .servicioDescripcion {
+        color: white;
+    }
     .listadoInicio{
                 display:flex ;
                 justify-content: center;
@@ -28,6 +34,13 @@ body{
     .tituloCard{
         font-size: 30px;
         color: $colorGeneralDos;
+    }
+    .card-img-top {
+        margin-top: 12px;
+    }
+    .btn-primary {
+        background-color: $colorGeneralDos;
+        border-color: $colorGeneralDos;
     }
     .semi {
         padding-top: 13%;
@@ -45,16 +58,28 @@ body{
     .cumpleañero {
         font-size: 40px;
         text-align: center;
+        align-items: center;
+        justify-content: center;
         border-radius: 5px;
         border-style:dashed;
         border-color: white;
+        margin: 10px;
     }
     .amigas {
         font-size: 40px;
         text-align: center;
+        align-items: center;
+        justify-content: center;
         border-radius: 5px;
         border-style:dashed;
         border-color: white;
+        margin: 10px;
+        
+        p {
+            align-items: center;
+            justify-content: center;
+            padding-top: 30px;
+        }
     }
 }
 .marcas{
@@ -82,12 +107,19 @@ body{
     .chh {
         padding-top: 0px;
     }
+    .chhh {
+        padding-top: 25px;
+    }
 }
 .textoMarcas {
     display: flex;
     justify-content: center;
+    align-items: center;
     font-size: 23px;
+    color: white;
+    text-align: center;
 }
+
 .formulario fieldset{
     margin-top: 100px;
     margin-bottom: 100px;
@@ -96,12 +128,23 @@ body{
     margin-left: 10px;
     margin-right: 10px;
     padding: 5px;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    color: white;
 }
+.cherimoya {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #pieDePagina{
     background-color: rgba(24, 20, 20, 0.753);
     color: white;
     font-family: 'Poppins', sans-serif;
     .logo {
+        padding-top: 10px;
         a {
             img {
                 width: 50px;
@@ -113,6 +156,26 @@ body{
     }
 }
 @media (max-width: 768px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .card {
+            margin-top: 10px;
+            width: auto;
+            .card-img-top {
+                margin-top: 12px;
+            }
+            .btn-primary {
+                background-color: $colorGeneralDos;
+                border-color: $colorGeneralDos;
+            }
+        }
+        .tituloCard {
+            font-size: 23px;
+        }
+    }
     .listadoInicio {
         color: $colorGeneral;
         font-size: 40px;
@@ -121,7 +184,7 @@ body{
     }
     .marcas {
         p {
-            font-size: 20px;
+            font-size: 26px;
         }
         ul {
             display: flex;
@@ -149,11 +212,17 @@ body{
             }
         }
     }
+    .row {
+        .cumpleañero {
+            margin-left: 10px;
+        }
+    }
     #pieDePagina {
         display: flex;
         flex-direction: column-reverse;
         width: 100%;
         .logo {
+            padding-top: 0px;
             display: flex;
             flex-direction: row;
             justify-content: center;
